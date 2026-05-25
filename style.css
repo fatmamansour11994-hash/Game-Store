@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body{
+    background: #0f172a;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+header{
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+    .logo{
+    font-size: 30px;
+    font-weight: 800;
+    color: #38bdf8;
+}
+
+nav{
+    display: flex;
+    gap: 25px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+#themeBtn{
+    background: #38bdf8;
+    border: none;
+    width: 45px;
+    height: 45px;
+     border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* Hero */
+.hero{
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+    gap: 50px;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 18px;
+    }
+    .hero-text button{
+    padding: 15px 35px;
+    border: none;
+    background: #38bdf8;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover{
+    transform: scale(1.05);
+}
+
+.hero-image{
+    flex: 1;
+}
+
+.hero-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* Games */
+.games-section{
+    padding: 80px 8%;
+}
+
+.section-title{
+    .hero-text button
+    padding: 15px 35px;
+    border: none;
+    background: #38bdf8;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover{
+    transform: scale(1.05);
+}
+
+.hero-image{
+    flex: 1;
+}
+
+.hero-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* Games */
+.games-section{
+    padding: 80px 8%;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.games-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 30px;
+}
+
+.card{
+    background: #1e293b;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.card-content p{
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.price-buy{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-buy span{
+    font-size: 22px;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.price-buy button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* About */
+.about{
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.about h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p{
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* Contact */
+.contact{
+    padding: 80px 8%;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+form{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input,
+form textarea{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 17px;
+}
+
+textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button{
+    padding: 15px;
+    border: none;
+    background: #38bdf8;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* Footer */
+footer{
+    background: #111827;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+
+/* Dark/Light Mode */
+.light-mode{
+    background: #f8fafc;
+    color: black;
+}
+
+.light-mode header,
+.light-mode footer{
+    background: white;
+}
+
+.light-mode .card{
+    background: white;
+    color: black;
+}
+.light-mode .card-content p,
+.light-mode .about p{
+    color: #334155;
+}
+
+.light-mode nav a{
+    color: black;
+}
+
+
+/* Responsive */
+@media(max-width: 900px){
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+  nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
